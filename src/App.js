@@ -1,22 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
 
+const controler = false;
+
+const objetoEstilos = {
+  width: '200px',
+  height: '200px',
+  backgroundColor: 'red',
+};
+const objetoEstilosDos = {
+  width: '300px',
+  height: '300px',
+  backgroundColor: 'blue',
+};
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div style={controler ? objetoEstilos : objetoEstilosDos}></div>
       </header>
     </div>
   );
